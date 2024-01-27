@@ -20,3 +20,10 @@ fi
 if [ "$MEMORY_USAGE" -gt "$MEMORY_THRESHOLD" ]; then
     echo "High Memory Usage: $MEMORY_USAGE%" >> "$LOG_FILE"
 fi
+
+# Check disk usage
+if [ "$DISK_USAGE" -gt "$DISK_THRESHOLD" ]; then
+    echo "High Disk Usage: $DISK_USAGE%" >> "$LOG_FILE"
+fi
+
+~                       
